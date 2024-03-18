@@ -156,11 +156,14 @@
 }
 
 .movie-app-info {
-    margin-top: 6rem;
-    display: grid;
+    margin-top: 9rem;
+    text-align: center;
+}
+
+#centre {
+    display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 .movie-title {
@@ -174,14 +177,79 @@
     backdrop-filter: blur(15px);
     border-radius: 15px;
     transition: transform 0.3s ease-in-out;
+    width: 800px;
 }
 
 .movie-title:hover {
     transform: scale(1.1);
 }
 
-.movie-app-poster {
-    display: inline-table;
+#para-movie-app {
+    font-size: 18px;
+    margin-bottom: 50px;
+    font-weight: 900;
+    color: #fff;
+    border: 1px transparent #fff;
+    width: 300px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#para-movie-app:hover {
+    transform: scale(1.1);
+}
+
+#center {
+    display: grid;
     align-items: center;
     justify-content: center;
 }
+
+.movie-app-poster {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    border: 2px solid #646cff;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.movie-app-poster:hover {
+    transform: scale(1.1);
+}
+
+.movie-app-backdrop {
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #646cff;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.movie-app-backdrop:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .movie-title {
+        width: 300px;
+    }
+
+    .movie-app-poster {
+        width: 295px;
+    }
+
+    .movie-app-backdrop {
+        width: 295px;
+    }
+}
+

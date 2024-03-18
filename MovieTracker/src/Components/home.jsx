@@ -62,14 +62,17 @@ function Home() {
             {error && <div className="movie-app-error">{error}</div>}
             {movieData && (
                 <div className="movie-app-info">
+                    <div id='centre'>
                     <header className='movie-title'>- Movie Title: {movieData.title} -</header>
+                    </div>
                     <img className="movie-app-poster" src={`https://image.tmdb.org/t/p/w500${movieData.poster_path}`} alt="poster" />
-                    <p id="para-movie-app"><pre>Release Date: <span id="change-p-text-movie">{"\n"}- {movieData.release_date} -</span></pre></p>
-                    <p id="para-movie-app"><pre>Popularity: <span id="change-p-text-movie">{"\n"}- {movieData.popularity} /100 -</span></pre></p>
-                    <p id="para-movie-app"><pre>Movie Language: <span id="change-p-text-movie">{"\n"}- {movieData.original_language} -</span></pre></p>
-                    <p id="para-movie-app"><pre>Average Vote: <span id="change-p-text-movie">{"\n"}- {movieData.vote_average} /10 -</span></pre></p>
-                    <p id="para-movie-app"><pre>Vote Count: <span id="change-p-text-movie">{"\n"}- {movieData.vote_count} -</span></pre></p>
-                    <p id="para-movie-app"><pre>Age Rating: <span id="change-p-text-movie">{"\n"}- {movieData.adult} -</span></pre></p>
+                    <div id='center'>
+                    <p id="para-movie-app"><pre>Release Date <span id="change-p-text-movie">{"\n"}- {movieData.release_date} -</span></pre></p>
+                    <p id="para-movie-app"><pre>Popularity <span id="change-p-text-movie">{"\n"}- {movieData.popularity} /100 -</span></pre></p>
+                    <p id="para-movie-app"><pre>Movie Language <span id="change-p-text-movie">{"\n"}- {movieData.original_language} -</span></pre></p>
+                    <p id="para-movie-app"><pre>Average Vote <span id="change-p-text-movie">{"\n"}- {movieData.vote_average} /10 -</span></pre></p>
+                    <p id="para-movie-app"><pre>Vote Count <span id="change-p-text-movie">{"\n"}- {movieData.vote_count} -</span></pre></p>
+                    </div>
                     <img className="movie-app-backdrop" src={`https://image.tmdb.org/t/p/w500${movieData.backdrop_path}`} about="backdrop" />
                 </div>
             )}
