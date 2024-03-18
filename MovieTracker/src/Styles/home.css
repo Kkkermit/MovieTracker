@@ -1,0 +1,187 @@
+.container {
+    padding: 0;
+}
+
+.header-container {
+    margin-top: 10rem;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header:hover {
+    transform: scale(1.1);
+}
+
+.header {
+    -webkit-text-stroke: 1px white;
+    border: 1px transparent #ffffff;
+    padding: 20px;
+    border-radius: 100px;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    width: 800px;
+}
+
+#dash {
+    color: #010101;
+    text-shadow: 0 0 7rem rgb(0, 0, 0)
+}
+
+#m {
+    color: red;
+    text-shadow: 0 0 4rem red;
+}
+
+#o {
+    color: orange;
+    text-shadow: 0 0 4rem orange;
+}
+
+#v {
+    color: yellow;
+    text-shadow: 0 0 4rem yellow;
+}
+
+#i {
+    color: greenyellow;
+    text-shadow: 0 0 4rem greenyellow;
+}
+
+#e {
+    color: green;
+    text-shadow: 0 0 4rem green;
+}
+
+#t {
+    color: lightskyblue;
+    text-shadow: 0 0 4rem lightblue;
+}
+
+#r {
+    color: blue;
+    text-shadow: 0 0 4rem blue;
+}
+
+#a {
+    color: indigo;
+    text-shadow: 0 0 4rem indigo;
+}
+
+#c {
+    color: blueviolet;
+    text-shadow: 0 0 4rem blueviolet;
+}
+
+#k {
+    color: purple;
+    text-shadow: 0 0 4rem purple;
+}
+
+#e2 {
+    color: lightcoral;
+    text-shadow: 0 0 4rem lightcoral; /* Fat ass shadow */
+}
+
+#r2 {
+    color: palevioletred;
+    text-shadow: 0 0 4rem palevioletred;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header {
+        width: 295px;
+    }
+}
+
+.body-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.logo {
+    transition: transform 0.3s ease-in-out, 300ms;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 4em #ffffffaa);
+    transform: scale(1.1);
+}
+
+.movie-app-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.movie-input {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    color: #ffffff;
+    border: 2px solid ;
+    border-radius: 10px;
+    margin-left: -1.5rem;
+}
+
+.movie-app-btn {
+    padding: 15px;
+    color: #ffffff;
+    background-color: #010101;
+    border: 1px solid #646cff;
+    transition: transform 0.3s ease-in-out, 300ms;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+    
+}
+
+.movie-app-btn:focus,
+.movie-app-btn:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+    transform: scale(1.1);
+}
+
+.movie-app-info {
+    margin-top: 6rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.movie-title {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    border: 2px solid #fff;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-title:hover {
+    transform: scale(1.1);
+}
+
+.movie-app-poster {
+    display: inline-table;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,13 @@
+.footer-container {
+    text-align: center;
+    margin-top: 8rem;
+    padding: 20px;
+}
+
+#footer-text {
+    color: var(--color-web-foreground);
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: none;
+    position: relative;
+}
